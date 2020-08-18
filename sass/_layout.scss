@@ -1,0 +1,35 @@
+.container{
+    width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-1);
+    box-shadow: var(--shadow-dark); 
+
+    min-height: 50rem; 
+}
+
+.header{
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--color-grey-light-2);
+}
+
+// our flex container 
+.content{
+    display: flex;
+}
+
+.sidebar{
+    background-color: var(--color-grey-dark-1);
+
+    // 0 >> flex grow, 0 >> flex shrink, 18% >> flex basis
+    // we use basis to set width of element incase of using flex 
+    flex: 0 0 18%;
+}
+
+.hotel-view{
+    background-color: #fff;
+
+    // this to make the second element take rest of spaces
+    flex: 1;
+    
+}
