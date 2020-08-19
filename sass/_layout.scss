@@ -8,9 +8,15 @@
 }
 
 .header{
+    font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-grey-light-2);
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 // our flex container 
@@ -24,6 +30,11 @@
     // 0 >> flex grow, 0 >> flex shrink, 18% >> flex basis
     // we use basis to set width of element incase of using flex 
     flex: 0 0 18%;
+
+    // flex item became flex container
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
 .hotel-view{
@@ -31,5 +42,6 @@
 
     // this to make the second element take rest of spaces
     flex: 1;
-    
+ 
+    height: 80rem;
 }
