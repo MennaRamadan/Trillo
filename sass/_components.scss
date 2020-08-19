@@ -152,7 +152,7 @@
 
         transform: scaleY(0);
         transition: transform .2s,
-                    width .4s cubic-bezier(1,0,0,1) .2s
+                    width .4s cubic-bezier(1,0,0,1) .2s,
                     background-color .1s; 
                     // this means first transition will occured in .2 s
                     // and width will delay for .2s
